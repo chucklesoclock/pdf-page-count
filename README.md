@@ -12,9 +12,9 @@ Counts all the pages of all the PDFs in a directory
 
 ### With Python installation
 
-- clone environment from file (TODO: add requirements file)
-- place `pdf_page_counter.py` in directory 
-- `python pdf_page_counter`
+- create conda environment with `conda env create -f environment.yml`
+- place `pdf_page_counter.py` in directory with pdfs
+- `python pdf_page_counter.py`
 - total pages will be printed to screen
 - view `pdf_page_counter.log` for more detailed info
 
