@@ -1,4 +1,3 @@
-from operator import le
 import pathlib
 from PyPDF2 import PdfReader
 from PyPDF2.errors import PdfReadError
@@ -18,7 +17,7 @@ def count_page(path: pathlib.Path) -> int:
             reader = PdfReader(f)
             num_pages = len(reader.pages)
         logging.info(f'"{path.name}":pages={num_pages}')
-        return len(reader.pages)
+        return num_pages
     except PdfReadError:
         logging.error(f'"{path.name}":could not be read as PDF')
         return 0
