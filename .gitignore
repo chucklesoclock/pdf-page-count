@@ -1,2 +1,3 @@
 *.spec
 build/
+pdf_page_counter.log
