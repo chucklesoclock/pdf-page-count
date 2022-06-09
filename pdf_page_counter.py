@@ -1,4 +1,5 @@
 import pathlib
+import sys
 from PyPDF2 import PdfReader
 from PyPDF2.errors import PdfReadError
 import logging
@@ -18,15 +19,16 @@ def count_page(path: pathlib.Path) -> int:
             num_pages = len(reader.pages)
         logging.info(f'"{path.name}":pages={num_pages}')
         return num_pages
-    except PdfReadError:
-        logging.error(f'"{path.name}":could not be read as PDF')
+    except PdfReadError as e:
+        logging.error(f'"{path.name}":{e}:could not be read as PDF')
         return 0
     except Exception as e:
-        logging.critical(
-            f'"{path.name}":Unknown exception, check log file for details. Exiting...'
+        print(
+            f"ERROR: Unhandled exception, check log file for details. Exiting...",
+            file=sys.stderr,
         )
-        logging.critical(e)
-        raise
+        logging.critical(f'"{path.name}":{e}', exc_info=True)
+        sys.exit()
 
 
 def main():
