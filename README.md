@@ -1,24 +1,28 @@
 # pdf-page-count
 Counts all the pages of all the PDFs in a directory
 
-## Usage 
+## Usage
+
+```
+$ python pdf_page_counter.py --help
+Usage: pdf_page_counter.py [OPTIONS] [DIR_PATH]
+
+Options:
+  -r, --recursive  recursive search; count all pdfs in all subdirectors of
+                   DIR_PATH
+  -t, --table      print a table to terminal using rich
+  --help           Show this message and exit.
+```
 
 ### Without Python installation 
 
-- place executable in directory you have the pdfs in
 - run `pdf_page_counter.exe` in command prompt
-- it should output total pages to screen
-- view generated `pdf_page_counter.log` in a simple text editor for more detailed info
 
 ### With Python installation
 
 - create conda environment with `conda env create -f environment.yml`
-- place `pdf_page_counter.py` in directory with pdfs
 - `python pdf_page_counter.py`
-- total pages will be printed to screen
-- view `pdf_page_counter.log` for more detailed info
 
-## Gotchas/Roadmap
+### Log File
 
-- the program will not walk down subdirectories looking for pdfs. functionality will be added in future release
-- TODO: make into CLI with `click`
+- view `pdf_page_counter.log` in text editor for more detailed info. PDF read errors will be populated here. 
