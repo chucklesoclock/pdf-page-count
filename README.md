@@ -14,7 +14,7 @@ Options:
   --help           Show this message and exit.
 ```
 
-### Without Python installation 
+### On Windows 
 
 - run `pdf_page_counter.exe` in command prompt
 
