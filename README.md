@@ -1,5 +1,5 @@
 # pdf-page-count
-Counts all the pages of all the PDFs in a directory
+Counts all the pages of all the PDFs in a directory. A very specific tool for a very specific task which burdened my partner. 
 
 ## Usage
 
@@ -7,10 +7,12 @@ Counts all the pages of all the PDFs in a directory
 $ python pdf_page_counter.py --help
 Usage: pdf_page_counter.py [OPTIONS] [DIR_PATH]
 
+  Count all the PDFs in the directory DIR_PATH.
+
 Options:
   -r, --recursive  recursive search; count all pdfs in all subdirectors of
                    DIR_PATH
-  -t, --table      print a table to terminal using rich
+  -t, --table      print a table to terminal using rich library
   --help           Show this message and exit.
 ```
 
@@ -25,4 +27,8 @@ Options:
 
 ### Log File
 
-- view `pdf_page_counter.log` in text editor for more detailed info. PDF read errors will be populated here. 
+- view `pdf_page_counter.log` in text editor for more detailed info. PDF read errors will be populated there. 
+
+## Acknowledgements
+
+Many thanks to the [rich](https://github.com/Textualize/rich) library for their excellent terminal printing functionality. 
