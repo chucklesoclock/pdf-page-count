@@ -58,7 +58,9 @@ def count_pages(path: pathlib.Path) -> int:
 )
 def count(dir_path, recursive, table):
     """
-    "1, 2, 3, PDFs do I see, HA HA HA"
+    Count all the PDFs in the directory DIR_PATH.
+
+    "1, 2, 3 PDFs do I see, HA HA HA"
 
         -- Count von Count, Seasame Street
     """
