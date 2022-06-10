@@ -16,9 +16,15 @@ Options:
   --help           Show this message and exit.
 ```
 
-### On Windows 
+### On Windows
 
-- run `pdf_page_counter.exe` in command prompt
+#### Powershell
+
+- `.\pdf_page_counter.exe`
+
+#### Command Prompt
+
+- `pdf_page_counter.exe`
 
 ### With Python installation
 
