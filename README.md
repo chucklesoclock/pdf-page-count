@@ -10,13 +10,15 @@ Usage: pdf_page_counter.py [OPTIONS] [DIR_PATH]
   Count all the PDFs in the directory DIR_PATH.
 
 Options:
-  -r, --recursive  recursive search; count all pdfs in all subdirectors of
-                   DIR_PATH
+  -r, --recursive  recursive search: count all pdfs in DIR_PATH and all its
+                   subdirectories
   -t, --table      print a table to terminal using rich library
   --help           Show this message and exit.
 ```
 
 ### On Windows
+
+Recommend using Windows Terminal to interact with the script
 
 #### Powershell
 
