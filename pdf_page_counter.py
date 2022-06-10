@@ -47,7 +47,7 @@ def count_pages(path: pathlib.Path) -> int:
     "--recursive",
     is_flag=True,
     default=False,
-    help="recursive search; count all pdfs in all subdirectors of DIR_PATH",
+    help="recursive search: count all pdfs in DIR_PATH and all its subdirectories",
 )
 @click.option(
     "-t",
