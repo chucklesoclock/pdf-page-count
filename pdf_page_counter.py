@@ -54,7 +54,7 @@ def count_pages(path: pathlib.Path) -> int:
     "--table",
     is_flag=True,
     default=False,
-    help="print a table to terminal using rich",
+    help="print a table to terminal using rich library",
 )
 def count(dir_path, recursive, table):
     """
